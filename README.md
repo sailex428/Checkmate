@@ -1,4 +1,4 @@
-# checkmate
+# Checkmate
 
 A simple chess webapp.
 
