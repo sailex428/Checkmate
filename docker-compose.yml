@@ -6,12 +6,14 @@ services:
     image: eliashahn12/checkmate-backend:latest
     networks: 
       - main
+    restart: unless-stopped
 
   frontend:
     container_name: frontend
     image: eliashahn12/checkmate-frontend:latest
     networks: 
       - main
+    restart: unless-stopped
 
 networks:
   main:
