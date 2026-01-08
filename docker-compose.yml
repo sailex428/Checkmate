@@ -7,6 +7,10 @@ services:
     networks: 
       - main
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256M
 
   frontend:
     container_name: frontend
@@ -14,6 +18,10 @@ services:
     networks: 
       - main
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256M
 
 networks:
   main:
