@@ -2,7 +2,7 @@ name: checkmate
 
 services:
   backend:
-    container_name: backend
+    container_name: checkmate-backend
     image: eliashahn12/checkmate-backend:latest
     networks: 
       - main
@@ -13,7 +13,7 @@ services:
           memory: 256M
 
   frontend:
-    container_name: frontend
+    container_name: checkmate-frontend
     image: eliashahn12/checkmate-frontend:latest
     networks: 
       - main
